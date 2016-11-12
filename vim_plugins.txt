@@ -1,0 +1,6 @@
+https://github.com/wincent/command-t
+https://github.com/scrooloose/nerdtree
+git://github.com/majutsushi/tagbar
+git://github.com/tpope/vim-fugitive.git
+https://github.com/jistr/vim-nerdtree-tabs
+https://github.com/Valloric/YouCompleteMe
