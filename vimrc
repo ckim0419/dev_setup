@@ -3,10 +3,18 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" Tagbar
+map <F8> :TagbarToggle<CR>
+
+" flake8-vim
+let g:PyFlakeMaxLineLength = 120
+let g:PyFlakeForcePyVersion = 2
+map <F7> :PyFlakeAuto<CR>
+
+
 " F2 NERDTree
 map <F2> :NERDTreeTabsToggle<CR>
-map <F7> :TagbarToggle<CR>
-let NERDTreeIgnore = ['\.pyc$', '.egg-info', '__pycache__', 'env']
+let NERDTreeIgnore = ['\.pyc$', '.egg-info', '__pycache__', 'env/']
 let g:nerdtree_tabs_open_on_gui_startup=0
 let g:nerdtree_tabs_open_on_console_startup=0
 
