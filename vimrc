@@ -3,6 +3,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" QuickFix
+map <F5> :cope<CR>
+
 " Tagbar
 map <F8> :TagbarToggle<CR>
 
@@ -45,4 +48,4 @@ set laststatus=2
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion = 1
-nnoremap <leader>g :YcmCompleter GoTo<CR>
+nnoremap <leader>d :YcmCompleter GoTo<CR>
