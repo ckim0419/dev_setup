@@ -4,9 +4,13 @@ set -e
 
 
 # check requirement
-for req in go python-config git cmake ; 
-  which $req &>/dev/null || echo "Requirement $req is not met." && exit 1
-done
+check_req() {
+  for req in go python2-config git cmake ; do
+    which $req &>/dev/null || echo "Requirement $req is not met." && return 1
+  done
+}
+
+check_req || exit 1
 
 install -d $HOME/.vim/{colors,bundle,autoload}
 install vimrc $HOME/.vimrc
