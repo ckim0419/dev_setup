@@ -6,8 +6,9 @@ set -e
 # check requirement
 check_req() {
   for req in go python2-config git cmake ; do
-    which $req &>/dev/null || echo "Requirement $req is not met." && return 1
+    which $req &>/dev/null || { echo "Requirement $req is not met." && return 1 ; }
   done
+  return 0
 }
 
 check_req || exit 1
@@ -30,7 +31,7 @@ popd
 
 pushd $HOME/.vim/bundle/YouCompleteMe
   git submodule update --init --recursive
-  ./install.py --clang-completer
+  ./install.py --clang-completer --gocode-completer
 popd
 
 
