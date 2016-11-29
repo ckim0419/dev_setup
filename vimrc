@@ -17,7 +17,7 @@ map <F7> :PyFlakeAuto<CR>
 
 " F2 NERDTree
 map <F2> :NERDTreeTabsToggle<CR>
-let NERDTreeIgnore = ['\.pyc$', '.egg-info', '__pycache__', 'env/']
+let NERDTreeIgnore = ['\.pyc$', '.egg-info', '__pycache__', '^env$[[dir]]', '^node_modules$[[dir]]']
 let g:nerdtree_tabs_open_on_gui_startup=0
 let g:nerdtree_tabs_open_on_console_startup=0
 

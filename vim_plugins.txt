@@ -5,3 +5,4 @@ https://github.com/jistr/vim-nerdtree-tabs
 https://github.com/Valloric/YouCompleteMe
 https://github.com/vim-airline/vim-airline
 https://github.com/andviro/flake8-vim
+https://github.com/pangloss/vim-javascript
